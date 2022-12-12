@@ -8,7 +8,7 @@ while True:
     except:
         break
 
-    k, = set(x) & set(y) & set(z)
+    (k,) = set(x) & set(y) & set(z)
     if k >= "a":
         t += ord(k) - ord("a") + 1
     else:

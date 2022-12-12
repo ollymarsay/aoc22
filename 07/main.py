@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 def _parse(lines):
     cwd, sizes = "", defaultdict(int)
     for line in lines:
@@ -35,6 +36,7 @@ def part2(lines):
         if 70000000 - (total - size) >= 30000000:
             return size
     return total
+
 
 lines = open("07/input.txt").read().split("\n")
 print(part1(lines))
